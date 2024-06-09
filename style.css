@@ -1,0 +1,221 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(245, 243, 230);
+}
+#main {
+    padding: 0;
+    width: 80vw;
+    height: 90vh;      
+}
+
+header {
+    height: 10vh;
+    top: 0;
+}
+
+#menu-imgs {
+    height: 70vh;
+    text-align: center;
+}
+
+.social img{
+    width: 20px;
+    height: 20px;
+    margin-right: 30px;
+}
+
+header{
+    padding-top: 20px;
+}
+
+header .social img {
+    margin-top: 20px;
+} 
+
+#logo img {
+    width: 100px;
+    height: 10vh;
+    margin: 0 auto;
+}
+
+button .navbar-toggler {
+    line-height: 0
+}
+
+.navbar div {
+    padding: 0;
+}
+
+.offcanvas-header {
+    margin-top: 20px;
+    margin-inline: 15px;
+}
+
+.offcanvas-title {
+    font-size: 2rem
+}
+header .navbar-nav {
+    margin-left: 15px;
+    padding-bottom: 20px;
+}
+
+section {
+    margin-top: 10vh;
+}
+
+#menu-imagens .caixa-img2 {
+    height: 30vh;
+    margin-top: 30px;
+    background-image: url(imgs/Documentario3.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#menu-imagens .caixa-img3 {
+    height: 65vh;
+    background-image: url(imgs/imagem_perfil.jpg);
+    background-size: cover;
+}
+
+#menu-imagens .caixa-img4 {
+    height: 30vh;
+    background-image: url(imgs/makingoff6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#menu-imagens .caixa-img5 {
+    height: 20vh;
+    background-color: yellow;
+    background-size: cover;
+}
+
+#menu-imagens .espaco{
+    padding: 0 20px 20px 20px;
+}
+footer {
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(47, 5, 87);
+}
+footer .social img {
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+footer .social {
+    margin-left: 15vw;
+}
+
+footer .dados {
+    margin-left: 30px;
+}
+
+footer .nome-dado {
+    margin-top: 10px;
+    margin-bottom: 6px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+footer .dado {
+    margin-bottom: 0px;
+    font-style: italic;
+    color: rgb(190, 190, 190);
+}
+
+#sobre {
+    margin-top: 10vh;
+}
+
+#sobre .img-perfil {
+    background-image: url(imgs/imagem_perfil.jpg);
+    background-size: cover;
+    background-position: left bottom;
+    height: calc(15vw + 20vh);
+    border-radius: 50%;
+}
+
+#sobre .bio{
+    padding-left: 50px;
+    width: 50%;
+}
+
+#sobre .bio .subtitulo {
+    margin-bottom: 20px;
+}
+
+#trabalhos .caixa-video {
+    height: 25vh;
+    position: relative;
+    margin-top: 30px;
+}
+
+#trabalhos h1 {
+    font-size: calc(1.5vw + 2vh);
+}
+#makingoff h1 {
+    text-transform: uppercase;
+}
+
+#makingoff .linha {
+    border-bottom: solid greenyellow 4px;
+    width: 40px;
+    padding-top: 10vh;
+    margin: 0 auto
+}
+
+/** Como o modelo de carrossel que há no Bootstrap não correspode o tipo de carrossel que eu planejei no meu protótipo, tive que apelar a pegar o código CSS do github. Segue o link do código orginal: https://github.com/Coding-with-Robby/infinite-logo-carousel/blob/css/style.css**/ 
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+  
+#makingoff video {
+    margin-right: 30px;
+}
+#makingoff .carrossel-infinito {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+#makingoff .carrossel-infinito:before,
+#makingoff .carrossel-infinito:after {
+  position: absolute;
+  top: 0;
+  width: 10vw;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+#makingoff .carrossel-infinito:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+#makingoff .carrossel-infinito:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+#makingoff .carrossel-infinito:hover .imgs-carrossel {
+  animation-play-state: paused;
+}
+
+.imgs-carrossel {
+  display: inline-block;
+  animation: 40s slide infinite linear;
+}
+
+.imgs-carrossel img {
+  width: 20vw;
+  margin: 0 30px;
+}
